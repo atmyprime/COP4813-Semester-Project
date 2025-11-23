@@ -1,5 +1,5 @@
-<?php require_once "../includes/config.php"; ?>
-<?php include "../includes/header.php"; ?>
+<?php require_once "config.php"; ?>
+<?php include "header.php"; ?>
 
 <div class="row justify-content-center">
   <div class="col-md-8">
@@ -16,4 +16,4 @@
   </div>
 </div>
 
-<?php include "../includes/footer.php"; ?>
+<?php include "footer.php"; ?>
