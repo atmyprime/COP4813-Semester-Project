@@ -1,5 +1,5 @@
 <?php
-require_once "../includes/config.php";
+require_once "config.php";
 
 if (empty($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -12,7 +12,7 @@ $stmt->execute([':uid' => $_SESSION['user_id']]);
 $lastPlan = $stmt->fetch();
 ?>
 
-<?php include "../includes/header.php"; ?>
+<?php include "header.php"; ?>
 
 <h2 class="mb-3">Welcome, <?= htmlspecialchars($_SESSION['name']) ?> 👋</h2>
 
@@ -64,4 +64,4 @@ $lastPlan = $stmt->fetch();
   <?php endif; ?>
 </div>
 
-<?php include "../includes/footer.php"; ?>
+<?php include "footer.php"; ?>
