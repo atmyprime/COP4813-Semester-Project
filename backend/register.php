@@ -1,5 +1,5 @@
 <?php
-require_once "../includes/config.php";
+require_once "config.php";
 
 $errors = [];
 $name = $email = $password = $confirm = "";
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<?php include "../includes/header.php"; ?>
+<?php include "header.php"; ?>
 
 <div class="row justify-content-center">
   <div class="col-md-6">
@@ -81,4 +81,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 </div>
 
-<?php include "../includes/footer.php"; ?>
+<?php include "footer.php"; ?>
