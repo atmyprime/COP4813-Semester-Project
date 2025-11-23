@@ -1,5 +1,5 @@
 <?php
-require_once "../includes/config.php";
+require_once "config.php";
 
 if (empty($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -14,9 +14,9 @@ $stmt->execute([':id' => $planId, ':uid' => $_SESSION['user_id']]);
 $plan = $stmt->fetch();
 
 if (!$plan) {
-    include "../includes/header.php";
+    include "header.php";
     echo '<div class="alert alert-danger">Meal plan not found.</div>';
-    include "../includes/footer.php";
+    include "footer.php";
     exit;
 }
 
@@ -38,7 +38,7 @@ foreach ($items as $item) {
 }
 ?>
 
-<?php include "../includes/header.php"; ?>
+<?php include "header.php"; ?>
 
 <h2 class="mb-3">
   Meal Plan (<?= htmlspecialchars($plan['start_date']) ?> → <?= htmlspecialchars($plan['end_date']) ?>)
@@ -67,4 +67,4 @@ foreach ($items as $item) {
 
 <a href="dashboard.php" class="btn btn-secondary">Back to Dashboard</a>
 
-<?php include "../includes/footer.php"; ?>
+<?php include "footer.php"; ?>
