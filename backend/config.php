@@ -1,9 +1,9 @@
 <?php
 // backend/config.php
-$host = 'localhost';
-$db   = 'mealplanner';       // change to your DB name
-$user = 'db_user';           // change to your DB user
-$pass = 'db_password';       // change to your DB password
+const DB_HOST = 'sql312.infinityfree.com';     
+const DB_NAME = 'if0_40296760_cop4813';  
+const DB_USER = 'if0_40296760';  
+const DB_PASS = 'BMCqb8HtfwaZA'; 
 
 $dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
 
