@@ -1,5 +1,5 @@
 <?php
-require_once "../includes/config.php";
+require_once "config.php";
 
 if (empty($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -27,11 +27,11 @@ if (!in_array($diet_type, $validDiets, true)) {
 if ($errors) {
     // Store errors in session and redirect back if you want
     // For now, just dump them
-    include "../includes/header.php";
+    include "header.php";
     echo '<div class="alert alert-danger"><ul>';
     foreach ($errors as $e) echo '<li>'.htmlspecialchars($e).'</li>';
     echo '</ul><a href="dashboard.php" class="btn btn-secondary mt-2">Back</a></div>';
-    include "../includes/footer.php";
+    include "footer.php";
     exit;
 }
 
