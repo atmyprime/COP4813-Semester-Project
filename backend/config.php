@@ -1,7 +1,7 @@
 <?php
 // backend/config.php
 const DB_HOST = 'sql312.infinityfree.com';     
-const DB_NAME = 'if0_40296760_cop4813';  
+const DB_NAME = 'if0_40296760_project';  
 const DB_USER = 'if0_40296760';  
 const DB_PASS = 'BMCqb8HtfwaZA'; 
 
