@@ -1,5 +1,5 @@
 <?php
-require_once "../includes/config.php";
+require_once "config.php";
 
 $errors = [];
 $email = "";
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<?php include "../includes/header.php"; ?>
+<?php include "header.php"; ?>
 
 <div class="row justify-content-center">
   <div class="col-md-5">
@@ -64,4 +64,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 </div>
 
-<?php include "../includes/footer.php"; ?>
+<?php include "footer.php"; ?>
